@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>21cards</title>
+    <script type="text/javascript" src="app.js"></script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>21cards</h1>
+        <p>I will find your card. The 11th one after 2 turns.</p>
+        <p class="view"><a href="https://github.com/narchontis/21cards">View the Project on GitHub <small>narchontis/21cards</small></a></p>
+      </header>
+
+<section>
+
+  <form id="form">
+    Enter a number between 1 and 21. I will guess your number.....
+    <br>
+    Number: <input type="number" name="fnumber" value=""><br>
+  </form> 
+  <button onclick="myFunction()">My secret Number</button>
+  <br>
+  <button onclick="myColumn(0)">Column 1</button>
+  <button onclick="myColumn(1)">Column 2</button>
+  <button onclick="myColumn(2)">Column 3</button>
+      
+  <p id="demo">
+  
+  </p>  
+  <p id="guess">
+  
+  </p> 
+  
+  <p id="number">
+  
+  </p>      
+
+  </body>
+</html>
