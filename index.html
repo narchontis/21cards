@@ -4,28 +4,62 @@
     <meta charset="utf-8">
     <title>21cards</title>
     <script type="text/javascript" src="app.js"></script>
+    <style type="text/css">
+      body {
+        font-family: Arial, sans-serif;
+        display: block;
+        margin: 8px;
+        margin-top: 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        margin-left: 8px;
+      }
 
+      .center {
+        margin: auto;
+        font-size: 2em;
+        width: 100%;
+        border: 3px solid green;
+        padding: 20px 0;
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 20px;
+
+      }
+
+      .magic {
+        display: none;
+        margin: auto;
+        font-size: 2em;
+        width: 60%;
+        border: 3px solid blue;
+        padding: 10px 0;
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 10px;
+
+      }
+
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>21cards</h1>
+        <h1 class='center'>21cards</h1>
         <p>I will find your card. The 11th one after 2 turns.</p>
         <p class="view"><a href="https://github.com/narchontis/21cards">View the Project on GitHub <small>narchontis/21cards</small></a></p>
       </header>
 
-<section>
-
   <form id="form">
-    Enter a number between 1 and 21. I will guess your number.....
-    <br>
-    Number: <input type="number" name="fnumber" value=""><br>
+    <p>Think of a number between 1 and 21.</p>
+    <p>With my amazing powers, I will guess your number .....</p>
   </form> 
-  <button onclick="myFunction()">My secret Number</button>
+
+  <button onclick="myFunction()">My secret Number is chosen</button>
   <br>
-  <button onclick="myColumn(0)">Column 1</button>
-  <button onclick="myColumn(1)">Column 2</button>
-  <button onclick="myColumn(2)">Column 3</button>
+  <button onclick="myColumn(0)">Line 1</button>
+  <button onclick="myColumn(1)">Line 2</button>
+  <button onclick="myColumn(2)">Line 3</button>
       
   <p id="demo">
   
@@ -34,7 +68,7 @@
   
   </p> 
   
-  <p id="number">
+  <p class='magic' id="number" >
   
   </p>      
 

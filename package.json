@@ -1,0 +1,19 @@
+{
+  "name": "21cards",
+  "version": "1.0.0",
+  "description": "I will find your card. The 11th one after 2 turns.",
+  "main": "app.js",
+  "scripts": {
+    "test": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narchontis/21cards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narchontis/21cards/issues"
+  },
+  "homepage": "https://github.com/narchontis/21cards#readme"
+}

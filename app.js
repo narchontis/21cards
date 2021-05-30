@@ -46,8 +46,18 @@ function myFunction() {
     document.getElementById("demo").innerHTML = text;
     document.getElementById("guess").innerHTML = guess;
     if (guess === 3){
-      document.getElementById("number").innerHTML = "Your number is: " + nums[10] + ". It's magic !!!";
+      document.getElementById("number").innerHTML = "Your number is: " + nums[10] + " It's magic !!!";
+      showMagicNumber();
     }
+}
+
+function showMagicNumber() {
+  let x = document.getElementById("number");
+  if (x.style.display === "") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 
 function myColumn(icol){
