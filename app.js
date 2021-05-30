@@ -34,11 +34,10 @@ function split() {
     });
   }
 function myFunction() {
-    var x = document.getElementById("form");
-    
-    var text = "";
-    var i;
-    for (i = 0; i < nums.length ; i++) {
+    let x = document.getElementById("form");
+    let text = "";
+
+    for (let i = 0; i < nums.length ; i++) {
       if ( i % 7 === 0 && i !== 0 )
         text += "<br>"
       text += nums[i] + " ";
@@ -53,10 +52,10 @@ function myFunction() {
 
 function showMagicNumber() {
   let x = document.getElementById("number");
-  if (x.style.display === "") {
-    x.style.display = "block";
+  if (x.style.display === '') {
+    x.style.display = 'block';
   } else {
-    x.style.display = "none";
+    x.style.display = '';
   }
 }
 
